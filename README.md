@@ -11,13 +11,13 @@ Commands sent as 1-byte operation codes (defined in cmdClientServer.h).
 
 Authentication system with registration (utenti.txt stores users).
 
-Two client roles:
+# Two client roles:
 
-# Player – plays the escape room.
+Player – plays the escape room.
 
-# Helper – sends random bonus time to players.
+Helper – sends random bonus time to players.
 
-# Server uses I/O multiplexing to manage multiple clients efficiently.
+Server uses I/O multiplexing to manage multiple clients efficiently.
 
 Game logic implemented as a finite state machine (FSM):
 
