@@ -1,7 +1,7 @@
 This project is a networked Escape Room game implemented in C using TCP sockets.
 It is based on a client-server architecture where the server manages the game logic and the clients interact with it by sending commands.
 
-#Features
+# Features
 
 Communication over TCP for reliable message delivery.
 
