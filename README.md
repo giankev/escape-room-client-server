@@ -1,7 +1,7 @@
 This project is a networked Escape Room game implemented in C using TCP sockets.
 It is based on a client-server architecture where the server manages the game logic and the clients interact with it by sending commands.
 
-Features
+#Features
 
 Communication over TCP for reliable message delivery.
 
@@ -13,11 +13,11 @@ Authentication system with registration (utenti.txt stores users).
 
 Two client roles:
 
-Player – plays the escape room.
+#Player – plays the escape room.
 
-Helper – sends random bonus time to players.
+#Helper – sends random bonus time to players.
 
-Server uses I/O multiplexing to manage multiple clients efficiently.
+#Server uses I/O multiplexing to manage multiple clients efficiently.
 
 Game logic implemented as a finite state machine (FSM):
 
@@ -27,7 +27,7 @@ Objects and locations also have states (e.g., locked/unlocked).
 
 Server tracks remaining time and tokens collected.
 
-How It Works
+#How It Works
 
 Start the server:
 Run and type start to begin listening for clients.
@@ -56,19 +56,18 @@ gameF6.h – data structures and constants for the F6 room.
 
 utenti.txt – stores registered user data.
 
-Requirements
+#Requirements
 
 GCC compiler
 
 POSIX-compatible system (Linux recommended)
 
-Run Example
-# Compile
+#Run Example
+
 gcc server.c -o server
 gcc client.c -o client
 
-# Run server
 ./server
 
-# Run client (in another terminal)
+Run client (in another terminal)
 ./client
